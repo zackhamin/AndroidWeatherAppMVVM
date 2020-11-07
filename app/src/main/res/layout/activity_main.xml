@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="#002196F3"
+        app:cardBackgroundColor="#05FFFFFF"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_image"
+        app:layout_constraintVertical_bias="0.7">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4D2196F3">
+
+                    <TextView
+                        android:id="@+id/day_one_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/day_one_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/image_weather_one"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4D2196F3">
+
+                    <TextView
+                        android:id="@+id/day_two_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/day_two_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/image_weather_two"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4D2196F3">
+
+                    <TextView
+                        android:id="@+id/day_three_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/day_three_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/image_weather_three"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4D2196F3">
+
+                    <TextView
+                        android:id="@+id/day_four_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/day_four_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/image_weather_four"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4D2196F3">
+
+                    <TextView
+                        android:id="@+id/day_five_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/day_five_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/image_weather_five"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4D2196F3">
+
+                    <TextView
+                        android:id="@+id/day_six_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/day_six_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/image_weather_six"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4D2196F3">
+
+                    <TextView
+                        android:id="@+id/day_seven_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/day_seven_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/image_weather_seven"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                </TableRow>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#002196F3"
+        app:cardBackgroundColor="#05FFFFFF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_image"
+        app:layout_constraintVertical_bias="0.32999998">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4D2196F3">
+
+                <TextView
+                    android:id="@+id/city_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/city_text"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4D2196F3">
+
+                <TextView
+                    android:id="@+id/weather_temp_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#0098C6EA"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/weather_temp_text"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="50sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4D2196F3">
+
+                <TextView
+                    android:id="@+id/description_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#0098C6EA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/weather_description_text"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
